@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBG - Daily Transactions | Cards</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #00626a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1920x500'); /* Placeholder for the banner */
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #00626a;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            margin: 0 auto 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input:focus, select:focus {
+            border-color: #00626a;
+            outline: none;
+        }
+
+        button.submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #00626a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button.submit-btn:hover {
+            background-color: #004f54;
+        }
+
+        .card-section {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #00626a;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #004f54;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>National Bank of Greece - Cards</h1>
+    </div>
+
+    <div class="banner">
+        Explore Our Cards
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Apply for a Card</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name">
+
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="Surname">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="Email">
+
+                <label for="afm">AFM</label>
+                <input type="text" id="afm" name="AFM">
+
+                <label for="card-type">Card Type</label>
+                <select id="card-type" name="Card_Type">
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="black">Black</option>
+                </select>
+
+                <label for="required-card-limit">Required Card Limit</label>
+                <input type="text" id="required-card-limit" name="Required_Card_Limit" pattern="[0-9]*" title="Please enter a number">
+
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <h1>Choose the Right Card for You</h1>
+        <p>We offer a variety of cards to meet your daily transaction needs. Whether you're looking for a debit, credit, or prepaid card, we have the perfect solution tailored to your lifestyle.</p>
+        
+        <div class="card-section">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Silver Card">
+                <h2>Silver Card</h2>
+                <p>An ideal card for everyday transactions with minimal fees.</p>
+                <button>Learn More</button>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Gold Card">
+                <h2>Gold Card</h2>
+                <p>Experience premium benefits and exclusive offers.</p>
+                <button>Learn More</button>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Black Card">
+                <h2>Black Card</h2>
+                <p>The ultimate choice for luxury and high spending limits.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
